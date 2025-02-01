@@ -28,7 +28,7 @@ plusMinute = input("Number of minutes: ")
 
 # Math and printing the result
 
-futureHour = str((int(currentHour) + int(plusHour))%24+int(plusMinute)//60)
+futureHour = str(((int(currentHour) + int(plusHour))+int(plusMinute)//60)%24)
 futureMinute = str((int(currentMinute) + int(plusMinute))%60)
 print("\033[92mThe time in "+plusHour+" hours and "+plusMinute+" minutes will be "+futureHour.zfill(2)+":"+futureMinute.zfill(2)+"\033[0m")
 print("**All times shown are in 24 hour style time**")
